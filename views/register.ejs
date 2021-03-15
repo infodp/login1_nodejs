@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="register-form">
+		<h1>Form Registration</h1>
+		<form action="/register" method="POST">
+            <label for="user">User</label>
+                <input type="text" name="user" required tabindex="1" autofocus>            
+            <label for="user">Full Name</label>
+                <input type="text" name="name" required tabindex="2">
+            
+            <label for="rol">Rol</label>                          
+            <select id="rol" name="rol" class="select-css" tabindex="3">
+                <option value="admin" selected>Admin</option>
+                <option value="data entry">Data Entry</option>                    
+            </select>
+             <br> 
+            <label for="pass">Password</label>
+			    <input type="password" name="pass" required tabindex="4">
+            <div style="display: inline;">             
+            <a href="/" class="btn-cancel">Cancel</a><input type="submit" class="btn-save" value="Save">           
+            </div>
+		</form>		
+	</div>
+
+    		
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<% if (typeof alert != "undefined")  { %>
+ <script>
+ Swal.fire({
+   title:'<%= alertTitle %>',
+   text:'<%= alertMessage %>',
+   icon:'<%= alertIcon %>',
+   showConfirmButton: <%= showConfirmButton %>,
+   timer: <%= timer %>
+ }).then(()=>{
+   window.location='/<%= ruta %>'
+ })
+ </script>
+<% } %>
+ </div>
+</body>
+</html>

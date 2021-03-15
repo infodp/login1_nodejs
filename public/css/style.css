@@ -1,0 +1,221 @@
+body{
+  font-family: 'Roboto';  
+  background-color: #f5f5f5;
+  margin: auto;
+  text-align: center;
+}
+
+/* Login form */
+.login-form, .contenedor {
+  width: 300px;
+  margin: 0 auto;
+}
+.login-form h1 {
+  text-align: center;
+  color:midnightblue ;
+  font-size: 28px;
+  padding: 70px 0 10px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  box-sizing:border-box;
+}
+
+/* Estilos boton LOGIN*/
+.btn-login{
+  width: 100%;
+  padding: 15px;
+  background-color: #6f42c1;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+}
+.btn-login:hover,.btn-login:active{
+  color:#fff;
+  background-color:#61428f;
+  border-color:#61428f
+}
+.btn-login:focus{
+  box-shadow:0 0 0 3px rgba(121,82,179,0.25)
+}
+
+/* Estilos boton REGISTER*/
+.btn-register{
+  width: 100%;
+  padding: 15px;
+  background-color: #34D399;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+  margin-top: 20px;
+  /* Para dar la apariencia de un boton */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;  
+}
+.btn-register:hover,.btn-register:active{
+  color:#fff;
+  background-color: #10B981;
+  border-color:#10B981
+;
+}
+.btn-register:focus{
+  box-shadow:0 0 0 3px #10B981;
+}
+
+
+
+/* Estilos de link para ir a LOGIN*/
+.a-login:link, .a-login:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #10B981;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a-login:hover, .a-login:active {
+  background-color: #10B981;
+  color: white;
+}
+
+/* Estilos de link para realizar el LOGOUT*/
+.a-logout:link, .a-logout:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #F87171;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a-logout:hover, .a-logout:active {
+  background-color: #F87171;
+  color: white;
+}
+
+/* Estilos boton CANCELAR*/
+.btn-cancel{
+  width: 50%;
+  padding: 15px;
+  background-color: #9CA3AF;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size:medium;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  /* Para dar la apariencia de un boton */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;  
+}
+.btn-cancel:hover,.btn-cancel:active{
+  color:#fff;
+  background-color: #6B7280;
+  border-color:#6B7280
+;
+}
+.btn-cancel:focus{
+  box-shadow:0 0 0 3px #6B7280;
+}
+
+/* Estilos boton GUARDAR*/
+.btn-save{
+  width: 50%;
+  padding: 15px;
+  background-color: #1D4ED8;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size:medium;
+  color: #ffffff;
+  margin-top: 20px;
+  /* Para dar la apariencia de un boton */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;  
+}
+.btn-save:hover,.btn-save:active{
+  color:#fff;
+  background-color: #1E3A8A;
+  border-color:#1E3A8A;
+}
+.btn-save:focus{
+  box-shadow:0 0 0 3px #1E3A8A;
+}
+
+/* form User Registration */
+.register-form{
+  width: 400px;
+  margin: 0 auto;
+  padding: 0px 20px 60px 20px;
+  margin-top: 35px;
+  font-family: roboto;  
+  text-align: left !important;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
+}
+
+.register-form h1 {
+  text-align: left;
+  color:midnightblue ;
+  font-size: 22px;
+  padding: 70px 0 10px 0;
+}
+.register-form input[type="password"],
+.register-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  box-sizing:border-box;
+}
+
+/* Estilos para el select dropdown */
+.select-css {
+  display: block;
+  font-size: 16px;  
+  font-weight: 400;  
+  line-height: 1.3;
+  padding: .4em 1.4em .3em .8em;
+  width: 400px;
+  max-width: 100%; 
+  box-sizing: border-box;
+  margin: 0;  
+  background-color: #f5f5f5;  
+ }
+ .select-css::-ms-expand {
+  display: none;
+ }
+ .select-css:hover {
+  border-color: #888;
+ }
+ .select-css:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222; 
+  outline: none;
+ }
+ .select-css option {
+  font-weight:normal;
+ }
